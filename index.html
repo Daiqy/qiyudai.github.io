@@ -106,16 +106,14 @@ Qin Zou, Hanwen Jiang, <b>Qiyu Dai</b>, Yuanhao Yue, Long Chen, and Qian Wang.
 <td align="left"><p><b>Lane Detection for Continuous Driving Scenes</b><br />
 <i>The NIS&P Lab, School of Computer Science, Wuhan University (Sept. 2017 - Nov. 2018)</i>
 <li> 
-For the problem that lane cannot be accurately detected using one single image in some extremely-bad driving scenarios, such as shadow, road mask degradation, and vehicle occlusion, 
-we propose to investigate lane detection by using multiple frames of a continuous driving scene, 
-and propose a new hybrid deep architecture for seamlessly integrating the DRNN with DCNN in a semantic-segmentation manner.
+For the problem that lane cannot be accurately detected using one single image in extremely-bad driving scenarios(shadow, road mask degradation, vehicle occlusion, etc.), 
+we proposed a a novel segmentation algorithm by using multiple frames of a continuous driving scene: a fully convolutional encoder-decoder for extracting and reconstructing feature map, and centered ConvLSTM for learning temporary feature propagation.
 </li>
 <li>
-A new large-scale continuous driving scenes datasets are collected for quantitative evaluation, containing 12 challenging situations and rural roads situations,
-which would help promote the research and development of autonomous driving.
+A new large-scale continuous driving scenes datasets are collected for quantitative evaluation, containing 12 challenging situations and rural roads situations.
 </li>
 <li>
-The proposed method demonstrates a 98\% accuracy on our dataset, especially best robustness on challenging situations, and SOTA performance on TuSimple lane dataset.
+The proposed method demonstrated a 98\% accuracy on our dataset, especially best robustness on challenging situations, and SOTA performance on TuSimple lane dataset.
 </li>
 [<a href="https://arxiv.org/abs/1903.02193">Paper</a>]
 [<a href="https://github.com/qinnzou/Robust-Lane-Detection">Codes&Data</a>]
